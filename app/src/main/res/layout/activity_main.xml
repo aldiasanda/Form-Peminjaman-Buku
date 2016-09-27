@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
-
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl501.formpeminjamanbuku.MainActivity"
-    android:orientation="vertical">
+    tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl501.formpeminjamanbuku.MainActivity">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:id="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="false"
         android:layout_marginTop="18dp"
@@ -30,10 +29,10 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:hint="Nama"
+            android:id="@+id/editTextNama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editTextNama" />
+            android:hint="Nama" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -41,130 +40,42 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:hint="ID KTP"
+            android:id="@+id/editTextID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editTextID"
+            android:hint="ID KTP"
             android:inputType="numberSigned" />
     </android.support.design.widget.TextInputLayout>
 
-    <TextView
-        android:layout_marginTop="4dp"
-        android:padding="8dp"
-        android:gravity="center_horizontal|left"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Jenis Kelamin : "
-        android:layout_gravity="left"
-        android:textSize="16dp"
-        android:textColor="@color/colorAccent"
-        android:id="@+id/textViewJK1" />
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:id="@+id/radioGroupJK">
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pria"
-            android:id="@+id/radioButtonP"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wanita"
-            android:id="@+id/radioButtonW"
-            android:checked="false" />
-    </RadioGroup>
-
-    <TextView
-        android:layout_marginTop="4dp"
-        android:padding="8dp"
-        android:gravity="center_horizontal|left"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Status :"
-        android:layout_gravity="left"
-        android:textSize="16dp"
-        android:textColor="@color/colorAccent"
-        android:id="@+id/textViewS" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pelajar"
-        android:id="@+id/checkBoxPL"
-        android:checked="false" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pegawai"
-        android:id="@+id/checkBoxPG"
-        android:checked="false" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wiraswasta"
-        android:id="@+id/checkBoxW"
-        android:checked="false" />
-
     <Button
+        android:id="@+id/buttonPinjam"
+        style="@style/Base.TextAppearance.AppCompat.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bgbtn"
-        android:textColor="@android:color/white"
-        style="@style/Base.TextAppearance.AppCompat.Title"
         android:text="Pinjam"
-        android:id="@+id/buttonPinjam" />
+        android:textColor="@android:color/white" />
 
     <TextView
-        android:layout_marginTop="4dp"
-        android:padding="8dp"
-        android:gravity="center_horizontal|left"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Nama"
         android:id="@+id/textViewNama"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="left"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal|left"
+        android:padding="8dp"
+        android:text="Nama"
         android:visibility="visible" />
 
     <TextView
-        android:layout_marginTop="4dp"
-        android:padding="8dp"
-        android:gravity="center_horizontal|left"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="ID"
         android:id="@+id/textViewID"
-        android:layout_gravity="left"
-        android:visibility="visible" />
-
-    <TextView
-        android:layout_marginTop="4dp"
-        android:padding="8dp"
-        android:gravity="center_horizontal|left"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="JK"
-        android:id="@+id/textViewJK"
         android:layout_gravity="left"
-        android:visibility="visible" />
-
-    <TextView
         android:layout_marginTop="4dp"
-        android:padding="8dp"
         android:gravity="center_horizontal|left"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Status"
-        android:id="@+id/textViewStatus"
-        android:layout_gravity="left"
+        android:padding="8dp"
+        android:text="ID"
         android:visibility="visible" />
 
 </LinearLayout>
