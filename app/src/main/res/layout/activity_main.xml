@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl501.formpeminjamanbuku.MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="18dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="Nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextNama" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="ID KTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextID"
+            android:inputType="numberSigned" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgbtn"
+        android:textColor="@android:color/white"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:text="Pinjam"
+        android:id="@+id/buttonPinjam" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:gravity="center_horizontal|left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hasil"
+        android:id="@+id/textViewHasil"
+        android:layout_gravity="left" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:gravity="center_horizontal|left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hasil1"
+        android:id="@+id/textViewHasil1"
+        android:layout_gravity="left" />
+
+</LinearLayout>
+</ScrollView>
