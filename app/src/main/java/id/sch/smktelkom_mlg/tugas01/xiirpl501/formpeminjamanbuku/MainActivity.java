@@ -142,6 +142,6 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         else nStatus-=1;
 
         tvS.setText("Status : "+ nStatus);
-        //as
+
     }
 }
