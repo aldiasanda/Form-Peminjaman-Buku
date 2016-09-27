@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="buku">
+        <item>Bahasa Indonesia</item>
+        <item>Bahasa Inggris</item>
+        <item>Matematika</item>
+        <item>Seni Budaya</item>
+        <item>Olahraga</item>
+    </string-array>
+</resources>
