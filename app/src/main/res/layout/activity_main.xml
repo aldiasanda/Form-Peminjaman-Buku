@@ -48,6 +48,72 @@
             android:inputType="numberSigned" />
     </android.support.design.widget.TextInputLayout>
 
+    <TextView
+        android:layout_marginTop="4dp"
+        android:padding="8dp"
+        android:gravity="center_horizontal|left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Jenis Kelamin : "
+        android:layout_gravity="left"
+        android:textSize="16dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/textViewJK1" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroupJK">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pria"
+            android:id="@+id/radioButtonP"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wanita"
+            android:id="@+id/radioButtonW"
+            android:checked="false" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:padding="8dp"
+        android:gravity="center_horizontal|left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Status :"
+        android:layout_gravity="left"
+        android:textSize="16dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/textViewS" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pelajar"
+        android:id="@+id/checkBoxPL"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pegawai"
+        android:id="@+id/checkBoxPG"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wiraswasta"
+        android:id="@+id/checkBoxW"
+        android:checked="false" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,24 +124,48 @@
         android:id="@+id/buttonPinjam" />
 
     <TextView
-        android:layout_marginTop="8dp"
-        android:padding="16dp"
+        android:layout_marginTop="4dp"
+        android:padding="8dp"
         android:gravity="center_horizontal|left"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hasil"
-        android:id="@+id/textViewHasil"
-        android:layout_gravity="left" />
+        android:text="Nama"
+        android:id="@+id/textViewNama"
+        android:layout_gravity="left"
+        android:visibility="visible" />
 
     <TextView
-        android:layout_marginTop="8dp"
-        android:padding="16dp"
+        android:layout_marginTop="4dp"
+        android:padding="8dp"
         android:gravity="center_horizontal|left"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hasil1"
-        android:id="@+id/textViewHasil1"
-        android:layout_gravity="left" />
+        android:text="ID"
+        android:id="@+id/textViewID"
+        android:layout_gravity="left"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:padding="8dp"
+        android:gravity="center_horizontal|left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="JK"
+        android:id="@+id/textViewJK"
+        android:layout_gravity="left"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:padding="8dp"
+        android:gravity="center_horizontal|left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Status"
+        android:id="@+id/textViewStatus"
+        android:layout_gravity="left"
+        android:visibility="visible" />
 
 </LinearLayout>
 </ScrollView>
