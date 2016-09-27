@@ -1,7 +1,7 @@
 package id.sch.smktelkom_mlg.tugas01.xiirpl501.formpeminjamanbuku;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -10,8 +10,6 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-
-import java.lang.reflect.Array;
 
 public class MainActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
     CheckBox cbPL, cbPG, cbW;
@@ -144,5 +142,6 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         else nStatus-=1;
 
         tvS.setText("Status : "+ nStatus);
+        //as
     }
 }
